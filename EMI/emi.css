@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+    background: radial-gradient(#2a2c32, #07081b);
+}
+
+.container {
+    width: 540px;
+    background: radial-gradient(#fff, #feeeee);
+    padding: 2rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container h2 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.container .line {
+    display: block;
+    width: 120px;
+    background: rgb(223, 59, 86);
+    height: 0.3rem;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.container .row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.row .col-md-6 {
+    display: block;
+    justify-content: space-around;
+    width: 50%;
+    position: relative;
+    padding: 0.3rem 0.6rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    height: 40px;
+    padding: 1.2rem 0.85rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 1px solid rgb(117, 92, 92);
+    border-radius: 0.6rem
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border: 2px solid rgb(135, 43, 43);
+}
+
+.row label {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 2px 4px;
+    color: rgb(140, 21, 21);
+}
+
+button {
+    width: 100%;
+    padding: 1rem 1rem 0.8rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    background: #961251;
+    border: 2px solid rgba(69, 66, 66, 0.13);
+    color: rgb(254, 253, 253);
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: color 0.25s, background 0.25s;
+}
+
+button:hover {
+    background: #562121;
+    color: #fff;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+.container .result {
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+ul {
+    width: 100%;
+    background: #f6dce8;
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.result ul li {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+#emi {
+    font-size: 17px;
+    color: #76284e;
+    font-weight: 700;
+}
+
+#totalInterest,
+#totalPayment {
+    color: #333332;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+canvas {
+    padding-bottom: 2rem;
+}

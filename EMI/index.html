@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="emi.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <span class="line"></span>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="loanAmount">Loan Amount:</label>
+                <input type="number" id="loanAmount" name="loanAmount" required>
+            </div>
+            <div class="col-md-6">
+                <label for="annualInterestRate">Annual Interest Rate:</label>
+                <input type="number" id="annualInterestRate" name="annualInterestRate" required>
+            </div>
+            <div class="col-md-6">
+                <label for="tenure">Tenure (in months):</label>
+                <input type="number" id="tenure" name="tenure" required>
+            </div>
+            <div class="col-md-6">
+                <button class="button">Calculate EMI</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <!-- <div class="chartBox"> -->
+            <canvas id="loanChart"></canvas>
+            <!-- </div> -->
+
+            <ul>
+                <li> <label for="emi">EMI per month:</label>
+                    <span id="emi"></span>
+                </li>
+                <li> <label for="totalInterest">Total interest to be paid:</label>
+                    <span id="totalInterest"></span>
+                </li>
+                <li> <label for="totalPayment">Total payment (principal + interest):</label>
+                    <span id="totalPayment"></span>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    <script src="emi.js"></script>
+</body>
+
+</html>
